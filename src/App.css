@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Rubik-Medium';
+  src: url('./../public/font/Rubik-Black.ttf') format('tff'),
+       url('./../public/font/Rubik-BlackItalic.ttf') format('tff'),
+       url('./../public/font/Rubik-Bold.ttf') format('tff'),
+       url('./../public/font/Rubik-BoldItalic.ttf') format('tff'),
+       url('./../public/font/Rubik-Italic.ttf') format('ttd'),
+       url('./../public/font/Rubik-Light.ttf') format('tff'),
+       url('./../public/font/Rubik-LightItalic.ttf') format('tff'),
+       url('./../public/font/Rubik-Medium.ttf') format('tff'),
+       url('./../public/font/Rubik-MediumItalic.ttf') format('ttf'),
+       url('./../public/font/Rubik-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 .nav-container{
   display: flex;
   background-color: #042541;
@@ -67,17 +82,67 @@ margin-top: 26px;
 input::-webkit-input-placeholder{
 color: #6F6F6F;
 font-size: 16px;
-
 }
-.trending-list{
-  padding:10px 20px;
+.whats-popular-option{
+  display: flex;
+}
+.watch-category{
+  display: flex;
+  border-radius: 19px;
+  margin-left: 1.438rem;
+  text-align: center;
+  align-items: center;
+}
+.watch-category .watch-item{
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.watch-category .selected{
+  width: 8.625rem;
+  height: 2.063rem;
+  background-color: #EC2227;
+  border-radius: 19px;
+}
+.trending-list .whats-popular-option{
+margin: 2.75rem 9.125rem 0rem;
+}
+.trending-list .whats-popular-option .popular-title-text{
+  color: #3D3D52;
+  font-size: 1.75rem;
+  font-weight: 500;
+  ;
 }
 .movie-img-card{
   border-radius: 6px;
   width: 100%;
   height: 239px;
+  box-shadow: 0px 3px 6px #00000046;
 }
 .movie-card{
-  height: 300px;
+  min-height: 18.75rem;
   width: 178px;
+}
+.movie-card-details{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  min-height: 3.813rem;
+}
+.movie-card-title{
+  color: #3D3D52;
+  font-weight: 500;
+}
+.movie-release-date{
+  color: #AAAAAA;
+  margin-top: 3px;
+}
+.watch-category{
+  width: 16rem;
+  background-color: #E3E3E3;
+  height: 2.313rem;
 }
