@@ -106,6 +106,8 @@ font-size: 16px;
   height: 2.063rem;
   background-color: #EC2227;
   border-radius: 19px;
+  color: #FFFFFF;
+  margin: 0px 3px;
 }
 .trending-list .whats-popular-option{
 margin: 2.75rem 9.125rem 0rem;
@@ -116,6 +118,28 @@ margin: 2.75rem 9.125rem 0rem;
   font-weight: 500;
   ;
 }
+
+.carousel-arrow{
+  height: 3.25rem;
+  width: 3.25rem;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.left-arrow{
+  position: absolute;
+  left: 3rem;
+  top: 30%;
+}
+.right-arrow{
+  position: absolute;
+  right: 6.5rem;
+  top: 30%;
+}
 .movie-img-card{
   border-radius: 6px;
   width: 100%;
@@ -124,7 +148,10 @@ margin: 2.75rem 9.125rem 0rem;
 }
 .movie-card{
   min-height: 18.75rem;
-  width: 178px;
+  width: 11.18rem !important;
+}
+.movie-card:last-child{
+
 }
 .movie-card-details{
   margin-top: 1rem;
@@ -141,8 +168,48 @@ margin: 2.75rem 9.125rem 0rem;
   color: #AAAAAA;
   margin-top: 3px;
 }
+
 .watch-category{
   width: 16rem;
   background-color: #E3E3E3;
   height: 2.313rem;
 }
+
+.footer{
+  display: flex;
+  padding: 3.125rem 9.125rem;
+  background-color: #042541;
+  color: #FFFFFF;
+}
+.weekend-watch-location{
+  max-width: 16.688rem;
+  margin-right: 7.688rem;
+}
+.location-info{
+  margin-top: 2.938rem;
+  line-height: 1.5rem;
+}
+.footer-links{
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+.footer-links-section{
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.188rem;
+}
+.footer-link-section-heading{
+  margin-bottom: 0.938rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.footer-link{
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
